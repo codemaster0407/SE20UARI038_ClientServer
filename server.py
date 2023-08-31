@@ -6,6 +6,8 @@ import websockets
 
 
 async def receive_message(websocket):
+    
+    
     name = await websocket.recv() #waiting for the message
     
     print(f'Server Received: {name}') #Printing the text received by client
@@ -22,4 +24,5 @@ async def run():
         await asyncio.Future()
         
 if __name__ == "__main__":
+    print('Server is up and running')
     asyncio.run(run())

@@ -3,6 +3,9 @@ import asyncio
 import websockets
 
 async def send_msg():
+    
+    
+    
     url = "ws://localhost:8765"
     # try:
     #     async with websockets.connect(uri) as websocket:
